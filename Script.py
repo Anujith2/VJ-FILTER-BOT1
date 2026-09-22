@@ -4,16 +4,20 @@
 
 
 class script(object):
-    START_TXT = """<b><blockquote>HELLO {}, MY NAME <a href="https://t.me/{}">{}</a></blockquote></b>
-
-<b>𝘐 𝘢𝘮 𝘢 𝘣𝘰𝘵 𝘵𝘩𝘢𝘵 𝘴𝘦𝘯𝘥𝘴 𝘮𝘰𝘷𝘪𝘦𝘴 𝘢𝘯𝘥 𝘴𝘦𝘳𝘪𝘢𝘭𝘴. 🥰  𝘞𝘩𝘢𝘵𝘦𝘷𝘦𝘳 𝘴𝘦𝘳𝘪𝘢𝘭 𝘢𝘯𝘥 𝘮𝘰𝘷𝘪𝘦 🍿 𝘺𝘰𝘶 𝘸𝘢𝘯𝘵, 𝘫𝘶𝘴𝘵 𝘢𝘴𝘬 𝘮𝘦 𝘢𝘯𝘥 𝘐 𝘸𝘪𝘭𝘭 𝘴𝘦𝘯𝘥 𝘪𝘵 𝘵𝘰 𝘺𝘰𝘶..  𝘐𝘧 𝘺𝘰𝘶 𝘩𝘢𝘷𝘦 𝘢𝘯𝘺 𝘥𝘰𝘶𝘣𝘵𝘴, 𝘱𝘭𝘦𝘢𝘴𝘦 𝘤𝘰𝘯𝘵𝘢𝘤𝘵 𝘵𝘩𝘦 𝘢𝘥𝘮𝘪𝘯. 👉 @Anujith1238</b>
+    START_TXT = """<b><blockquote>Hᴇʟʟᴏ {}, ᴍʏ ɴᴀᴍᴇ <a href=https://t.me/{}>{}</a></blockquote>
+    
+𝘐 𝘢𝘮 𝘢 𝘣𝘰𝘵 𝘵𝘩𝘢𝘵 𝘴𝘦𝘯𝘥𝘴 𝘮𝘰𝘷𝘪𝘦𝘴 𝘢𝘯𝘥 𝘴𝘦𝘳𝘪𝘢𝘭𝘴. 🥰  𝘞𝘩𝘢𝘵𝘦𝘷𝘦𝘳 𝘴𝘦𝘳𝘪𝘢𝘭 𝘢𝘯𝘥 𝘮𝘰𝘷𝘪𝘦 🍿 𝘺𝘰𝘶 𝘸𝘢𝘯𝘵, 𝘫𝘶𝘴𝘵 𝘢𝘴𝘬 𝘮𝘦 𝘢𝘯𝘥 𝘐 𝘸𝘪𝘭𝘭 𝘴𝘦𝘯𝘥 𝘪𝘵 𝘵𝘰 𝘺𝘰𝘶..  𝘐𝘧 𝘺𝘰𝘶 𝘩𝘢𝘷𝘦 𝘢𝘯𝘺 𝘥𝘰𝘶𝘣𝘵𝘴, 𝘱𝘭𝘦𝘢𝘴𝘦 𝘤𝘰𝘯𝘵𝘢𝘤𝘵 𝘵𝘩𝘦 𝘢𝘥𝘮𝘪𝘯. 👉 @Anujith1238</b>"""
 
 <b><blockquote>📌 MAINTAINED BY : Anujith <a href="https://t.me/Anujith1238">Anujith1238</a></blockquote></b>"""
 
-    CLONE_START_TXT = """<b><blockquote>HELLO {}, MY NAME <a href="https://t.me/{}">{}</a></blockquote></b>
+    CLONE_START_TXT = """<b><blockquote>ʜᴇʟʟᴏ {}, ᴍʏ ɴᴀᴍᴇ <a href=https://t.me/{}>{}</a></blockquote>
+    
+ɪ ᴀᴍ ᴀᴅᴠᴀɴᴄᴇ ᴀɴᴅ ᴘᴏᴡᴇʀғᴜʟʟ ᴀᴜᴛᴏғɪʟᴛᴇʀ ʙᴏᴛ ᴡɪᴛʜ ᴀᴍᴀᴢɪɴɢ ғᴇᴀᴛᴜʀᴇs ᴊᴜsᴛ ᴛʏᴘᴇ ᴡʜᴀᴛ ʏᴏᴜ ᴡᴀɴᴛ ᴛʜᴇɴ sᴇᴇ ᴍʏ ᴘᴏᴡᴇʀ 💘</b>"""
+    
+    HELP_TXT = """<b>Hᴇʏ {}
+Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
 
-ɪ ᴀᴍ ᴀᴅᴠᴀɴᴄᴇ ᴀɴᴅ ᴘᴏᴡᴇʀғᴜʟʟ ᴀᴜᴛᴏғɪʟᴛᴇʀ ʙᴏᴛ ᴡɪᴛʜ ᴀᴍᴀᴢɪɴɢ ғᴇᴀᴛᴜʀᴇs ᴊᴜsᴛ ᴛʏᴘᴇ ᴡʜᴀᴛ ʏᴏᴜ 𝘸𝘢𝘯𝘵 𝘵𝘩ᴇ𝘯 sᴇᴇ ᴍʏ ᴘᴏᴡᴇʀ 💘"""
-
+    ABOUT_TXT = """<b><blockquote>⍟───[ MY ᴅᴇᴛᴀɪʟꜱ ]───⍟</blockquote>
     HELP_TXT = """<b>Hᴇʏ {}
 Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
 
