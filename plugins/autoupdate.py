@@ -2,12 +2,12 @@ import re
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
-# നിങ്ങൾ നൽകിയ കൃത്യമായ വിവരങ്ങൾ ഇവിടെ ചേർത്തിരിക്കുന്നു
-DATABASE_CHANNEL_ID = -1002015288592  
-UPDATE_CHANNEL_ID = -1002110922261    
+# പ്രധാന വേരിയബിളുകൾ കൃത്യമായി നൽകിയിരിക്കുന്നു
+CHANNELS = -1002015288592  # Database Channel ID
+AUTH_CHANNEL = -1002110922261    # Update Channel ID
 BOT_USERNAME = "Anujith2bot"          
 
-@Client.on_message(filters.chat(DATABASE_CHANNEL_ID) & (filters.document | filters.video))
+@Client.on_message(filters.chat(CHANNELS) & (filters.document | filters.video))
 async def auto_post_formatter(client, message):
     try:
         # ഫയലിന്റെ ഒറിജിനൽ പേര് സുരക്ഷിതമായി എടുക്കുന്നു
@@ -58,7 +58,7 @@ async def auto_post_formatter(client, message):
 
         # അപ്ഡേറ്റ് ചാനലിലേക്ക് ഫോട്ടോയും ക്യാപ്ഷനും അയക്കുന്നു
         await client.send_photo(
-            chat_id=UPDATE_CHANNEL_ID,
+            chat_id=AUTH_CHANNEL,
             photo=BANNER_PHOTO,
             caption=caption,
             reply_markup=reply_markup
