@@ -2,7 +2,11 @@ import re
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
-# ഓട്ടോ പോസ്റ്റ് ഫോർമാറ്റർ കോഡ് (പ്ലഗിൻ ഫയലിന്റെ താഴെ ചേർക്കാൻ)
+# ഇവിടെ ചാനൽ ഐഡികൾ അല്ലെങ്കിൽ യൂസർനെയിമുകൾ നൽകുക (ഉദാഹരണത്തിന്: -100xxxxxxxxxx അല്ലെങ്കിൽ '@channel_username')
+CHANNELS = [-1002015288592]     # ഫയലുകൾ പരിശോധിക്കേണ്ട ചാനൽ ഐഡി
+AUTH_CHANNEL = -1002110922261   # പോസ്റ്റും ഫോട്ടോയും അയക്കേണ്ട ചാനൽ ഐഡി
+
+# ഓട്ടോ പോസ്റ്റ് ഫോർമാറ്റർ കോഡ്
 @Client.on_message(filters.chat(CHANNELS) & (filters.document | filters.video))
 async def auto_post_formatter(client, message):
     try:
